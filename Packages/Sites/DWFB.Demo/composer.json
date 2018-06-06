@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "dwfb/demo",
+    "autoload": {
+        "psr-4": {
+            "DWFB\\Demo\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "DWFB.Demo"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/Build/**
+/Configuration/**/*.example
+/Configuration/**/*.php
+/Configuration/Development/Settings.yaml
+/Configuration/Testing/
+/Configuration/README
+/Data/
+/Web/*
+/bin/
+/Packages/Framework/
+/Packages/Libraries/
+/Packages/Inactive/
+/Packages/Plugins/*
+# Replace with your own namespace or package
+!/Packages/Plugins/DWFB*
+/Packages/Application/*
+# Replace with your own namespace or package
+!/Packages/Application/DWFB*
+/Packages/Sites/*
+# Replace with your own namespace or package
+!/Packages/Sites/DWFB*
+/flow
+/flow.bat
+/Readme.rst
+/Upgrading.rst
+/Readme.txt
+/Upgrading.txt
