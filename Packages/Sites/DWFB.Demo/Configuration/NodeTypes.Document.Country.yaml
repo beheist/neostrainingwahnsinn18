@@ -1,0 +1,9 @@
+'DWFB.Demo:Country':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    icon: 'globe'
+    label: 'Land'
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
