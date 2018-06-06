@@ -35,4 +35,11 @@
           position: 2
           editorOptions:
             nodeTypes: ['DWFB.Demo:Country']
+    'teaserImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Teaser Image'
+        inspector:
+          group: custom
+          position: 3
 

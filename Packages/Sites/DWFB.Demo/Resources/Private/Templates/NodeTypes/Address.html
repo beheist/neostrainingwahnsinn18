@@ -1,4 +1,5 @@
 {namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
 
 <f:if condition="{neos:rendering.inBackend()}">
     <f:then>
@@ -19,3 +20,14 @@ Land:
 <f:for each="{country}" as="singleCountry">
     {singleCountry.properties.title}
 </f:for>
+<hr>
+Bild:
+<f:if condition="{teaserImage}">
+    <f:then>
+        <media:image image="{teaserImage}" alt="Fooo" />
+    </f:then>
+    <f:else>
+        <img src="https://placehold.it/600x400?text=PLATZHALTER" />
+    </f:else>
+</f:if>
+
