@@ -10,9 +10,17 @@
       type: string
       ui:
         inlineEditable: true
-        label: 'Straße'
+        aloha:
+          placeholder: 'STRASSE HIER'
+    'plz':
+      type: string
+      ui:
+        label: 'PLZ'
         reloadIfChanged: true
         inspector:
           group: custom
-        aloha:
-          placeholder: 'STRASSE HIER'
+      validation:
+        'Neos.Neos/Validation/StringLengthValidator':
+          minimum: 5
+          maximum: 5
+        'Neos.Neos/Validation/IntegerValidator': true
