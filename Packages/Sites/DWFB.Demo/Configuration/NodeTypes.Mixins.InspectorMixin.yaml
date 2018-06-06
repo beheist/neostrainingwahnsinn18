@@ -1,0 +1,15 @@
+'DWFB.Demo:InspectorMixin':
+  abstract: true
+  ui:
+    inspector:
+      tabs:
+        'custom':
+          label: 'Custom Data'
+          position: 1
+          icon: 'icon-cog'
+      groups:
+        'custom':
+          label: 'Custom Data'
+          tab: 'custom'
+          icon: 'icon-exchange'
+          position: 1

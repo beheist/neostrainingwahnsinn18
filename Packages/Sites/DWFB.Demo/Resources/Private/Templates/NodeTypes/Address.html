@@ -1,0 +1,10 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+
+<f:if condition="{neos:rendering.inBackend()}">
+    <f:then>
+        BACKEND
+    </f:then>
+    <f:else>
+        FRONTEND
+    </f:else>
+</f:if>

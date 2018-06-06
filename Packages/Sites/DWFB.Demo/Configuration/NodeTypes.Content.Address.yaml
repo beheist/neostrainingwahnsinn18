@@ -1,0 +1,18 @@
+'DWFB.Demo:Address':
+  superTypes:
+    'Neos.Neos:Content': true
+    'DWFB.Demo:InspectorMixin': true
+  ui:
+    icon: 'user'
+    label: 'Adresse'
+  properties:
+    'strasse':
+      type: string
+      ui:
+        inlineEditable: true
+        label: 'Straße'
+        reloadIfChanged: true
+        inspector:
+          group: custom
+        aloha:
+          placeholder: 'STRASSE HIER'
