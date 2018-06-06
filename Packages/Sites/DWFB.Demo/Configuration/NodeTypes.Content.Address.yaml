@@ -19,8 +19,27 @@
         reloadIfChanged: true
         inspector:
           group: custom
+          position: 1
       validation:
         'Neos.Neos/Validation/StringLengthValidator':
           minimum: 5
           maximum: 5
         'Neos.Neos/Validation/IntegerValidator': true
+    'country':
+      type: array
+      ui:
+        label: 'Land'
+        reloadIfChanged: true
+        inspector:
+          group: custom
+          position: 2
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              'de':
+                label: 'Deutschland'
+              'at':
+                label: 'Österreich'
+              'ch':
+                label: 'Schweiz'
+
