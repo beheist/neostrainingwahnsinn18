@@ -1,3 +1,11 @@
-prototype(DWFB.Demo:Page) < prototype(DWFB.Demo:DefaultPage)
+prototype(DWFB.Demo:Page) < prototype(DWFB.Demo:DefaultPage) {
+    body {
+        content {
+            firstChild = Neos.Neos:ContentCase {
+                @context.node = ${q(node).children('main').children().get(0)}
+            }
+        }
+    }
+}
 
 
