@@ -1,0 +1,28 @@
+'DWFB.Demo:MultiColumn':
+  superTypes:
+    'Neos.Neos:Content': true
+    'DWFB.Demo:InspectorMixin': true
+  ui:
+    icon: 'arrows'
+    label: 'Mehrspalter'
+  childNodes:
+    'items':
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'DWFB.Demo:MultiColumnItem': true
+
+
+'DWFB.Demo:MultiColumnItem':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    icon: 'battery'
+    label: 'Spalte'
+
+
+Neos.Neos:ContentCollection:
+  constraints:
+    nodeTypes:
+      'DWFB.Demo:MultiColumnItem': false
