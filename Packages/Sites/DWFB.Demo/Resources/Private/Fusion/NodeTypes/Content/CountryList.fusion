@@ -1,0 +1,27 @@
+prototype(DWFB.Demo:CountryList) {
+    countries = Neos.Fusion:Collection {
+        collection = ${q(site).find('[instanceof DWFB.Demo:Country]')}
+        itemName = "node"
+        itemRenderer = DWFB.Demo:CountryListItem
+    }
+    @cache {
+        mode = "cached"
+        entryIdentifier {
+            node = ${node}
+        }
+        entryTags {
+            1 = ${'Node_' + node.identifier}
+            2 = ${'NodeType_DWFB.Demo:Country'}
+        }
+    }
+}
+
+prototype(DWFB.Demo:CountryListItem) < prototype(Neos.Fusion:Template) {
+    countryName = ${q(node).property('title')}
+    abstract = Neos.Neos:ContentCollectionRenderer {
+        @context.node = ${q(node).children('abstract').get(0)}
+    }
+    node = ${node}
+
+    templatePath = 'resource://DWFB.Demo/Private/Templates/FusionObjects/CountryListItem.html'
+}

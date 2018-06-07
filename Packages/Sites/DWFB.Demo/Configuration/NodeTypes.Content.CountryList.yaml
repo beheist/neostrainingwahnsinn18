@@ -1,0 +1,6 @@
+'DWFB.Demo:CountryList':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    icon: 'list'
+    label: 'Länderliste'
