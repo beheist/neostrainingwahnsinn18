@@ -1,0 +1,16 @@
+'DWFB.Demo:Lightbox':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    icon: 'picture'
+    label: 'Lightbox'
+  properties:
+    'image':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        reloadIfChanged: true
+        label: 'Teaser Image'
+        inspector:
+          group: custom
+          position: 3
+

@@ -1,0 +1,14 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+
+<div>
+    <f:if condition="{image}">
+        <f:then>
+            <p>URI: {imageUri}</p>
+            <media:image image="{image}" alt="Fooo"/>
+        </f:then>
+        <f:else>
+            <strong>Bitte Bild hinzufügen</strong>
+        </f:else>
+    </f:if>
+</div>

@@ -1,0 +1,5 @@
+prototype(DWFB.Demo:Lightbox) {
+    imageUri = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+    }
+}
