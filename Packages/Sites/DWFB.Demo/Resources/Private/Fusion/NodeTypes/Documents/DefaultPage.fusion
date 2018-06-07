@@ -19,6 +19,7 @@ prototype(DWFB.Demo:DefaultPage) < prototype(Neos.Neos:Page) {
         }
 
         content {
+            headerImage = ${q(node).property('headerImage')}
             // The default content section
             main = Neos.Neos:PrimaryContent {
                 nodePath = 'main'

@@ -1,7 +1,18 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
 
 <f:section name="body">
+    <div>
+        <f:if condition="{content.headerImage}">
+            <f:then>
+                <media:image image="{content.headerImage}" alt="Fooo"/>
+            </f:then>
+            <f:else>
+                <strong>Bitte Header-Bild hinzufügen</strong>
+            </f:else>
+        </f:if>
+    </div>
     <nav class="menu">
         {parts.menu -> f:format.raw()}
     </nav>

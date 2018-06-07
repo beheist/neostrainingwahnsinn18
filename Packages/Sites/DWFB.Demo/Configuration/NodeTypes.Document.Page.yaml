@@ -7,3 +7,11 @@
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
+  properties:
+    'headerImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Header Image'
+        inspector:
+          group: custom
+          position: 3
