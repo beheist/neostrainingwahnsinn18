@@ -1,0 +1,3 @@
+'Neos.Neos:Node':
+  superTypes:
+    'DWFB.Demo:InspectorMixin': true

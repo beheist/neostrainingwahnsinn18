@@ -1,7 +1,6 @@
 'DWFB.Demo:Address':
   superTypes:
     'Neos.Neos:Content': true
-    'DWFB.Demo:InspectorMixin': true
   ui:
     icon: 'user'
     label: 'Adresse'

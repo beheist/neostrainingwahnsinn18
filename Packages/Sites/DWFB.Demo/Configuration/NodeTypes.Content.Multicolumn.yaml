@@ -2,7 +2,6 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.Neos:ContentCollection': true
-    'DWFB.Demo:InspectorMixin': true
   ui:
     icon: 'arrows'
     label: 'Mehrspalter'
@@ -13,12 +12,32 @@
 
 
 'DWFB.Demo:MultiColumnItem':
+  label: "${'Spalte ' + q(node).property('size')}"
   superTypes:
     'Neos.Neos:Content': true
     'Neos.Neos:ContentCollection': true
   ui:
     icon: 'battery'
     label: 'Spalte'
+  properties:
+    'size':
+      type: string
+      defaultValue: 'half'
+      ui:
+        label: 'Breite'
+        reloadIfChanged: true
+        inspector:
+          group: custom
+          position: 1
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              'full':
+                label: '100%'
+              'half':
+                label: '50%'
+              'quarter':
+                label: '25%'
   constraints:
     nodeTypes:
       '*': true

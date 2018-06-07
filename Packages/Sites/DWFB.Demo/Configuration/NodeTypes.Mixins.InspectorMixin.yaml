@@ -6,7 +6,7 @@
         'custom':
           label: 'Custom Data'
           position: 1
-          icon: 'icon-cog'
+          icon: 'icon-user'
       groups:
         'custom':
           label: 'Custom Data'

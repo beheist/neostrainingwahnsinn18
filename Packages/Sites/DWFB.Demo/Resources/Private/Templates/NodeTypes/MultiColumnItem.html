@@ -1,7 +1,7 @@
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace media=Neos\Media\ViewHelpers}
 
-<div class="column small-3">
+<div {attributes -> f:format.raw()}>
     {content -> f:format.raw()}
 </div>
 

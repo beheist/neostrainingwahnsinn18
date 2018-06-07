@@ -8,4 +8,21 @@ prototype(DWFB.Demo:MultiColumnItem) {
     content = Neos.Neos:ContentCollection {
         nodePath = 'content'
     }
+    attributes = Neos.Fusion:Attributes {
+        class = Neos.Fusion:Case {
+            isFull {
+                condition = ${q(node).property('size') == 'full'}
+                renderer = 'column small-12'
+            }
+            isHAlf {
+                condition = ${q(node).property('size') == 'half'}
+                renderer = 'column small-6'
+            }
+            isQuarter {
+                condition = ${q(node).property('size') == 'quarter'}
+                renderer = 'column small-3'
+            }
+        }
+        data-foo = 'bar'
+    }
 }
