@@ -1,32 +1,28 @@
 'DWFB.Demo:MultiColumn':
   superTypes:
     'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
     'DWFB.Demo:InspectorMixin': true
   ui:
     icon: 'arrows'
     label: 'Mehrspalter'
-  childNodes:
-    'items':
-      type: 'Neos.Neos:ContentCollection'
-      constraints:
-        nodeTypes:
-          '*': false
-          'DWFB.Demo:MultiColumnItem': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'DWFB.Demo:MultiColumnItem': true
 
 
 'DWFB.Demo:MultiColumnItem':
   superTypes:
     'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
   ui:
     icon: 'battery'
     label: 'Spalte'
-  childNodes:
-    'content':
-      type: 'Neos.Neos:ContentCollection'
-      constraints:
-        nodeTypes:
-          '*': true
-          'DWFB.Demo:MultiColumn': false
+  constraints:
+    nodeTypes:
+      '*': true
+      'DWFB.Demo:MultiColumn': false
 
 
 Neos.Neos:ContentCollection:
