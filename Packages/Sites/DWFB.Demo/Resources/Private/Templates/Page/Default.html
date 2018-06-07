@@ -1,26 +1,17 @@
-<!DOCTYPE html>
 {namespace neos=Neos\Neos\ViewHelpers}
 {namespace fusion=Neos\Fusion\ViewHelpers}
-<html>
-<head>
-	<f:section name="stylesheets">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
-	</f:section>
-	<f:section name="headScripts">
-		<!-- Put your scripts inclusions for the head here, they will be included in your website by Fusion -->
-	</f:section>
-</head>
-<body>
+
 <f:section name="body">
-	<nav class="menu">
-		{parts.menu -> f:format.raw()}
-	</nav>
-	<div class="content">
-		{content.main -> f:format.raw()}
-	</div>
+    <nav class="menu">
+        {parts.menu -> f:format.raw()}
+    </nav>
+    <div class="content">
+        {content.main -> f:format.raw()}
+    </div>
 </f:section>
+
 <f:section name="bodyScripts">
-	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by Fusion -->
+    <script src="{f:uri.resource(package:'DWFB.Demo', path:'foundation-6.4.2-custom/js/vendor/jquery.js')}"></script>
+    <script src="{f:uri.resource(package:'DWFB.Demo', path:'foundation-6.4.2-custom/js/vendor/foundation.js')}"></script>
+    <script src="{f:uri.resource(package:'DWFB.Demo', path:'foundation-6.4.2-custom/js/app.js')}"></script>
 </f:section>
-</body>
-</html>
