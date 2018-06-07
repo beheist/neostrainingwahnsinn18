@@ -1,4 +1,4 @@
-prototype(DWFB.Demo:Page) < prototype(DWFB.Demo:DefaultPage) {
+prototype(DWFB.Demo:Country) < prototype(DWFB.Demo:DefaultPage) {
     body {
         // These are your content areas, you can define as many as you want, just name them and the nodePath.
         content {
