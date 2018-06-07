@@ -20,6 +20,13 @@
   ui:
     icon: 'battery'
     label: 'Spalte'
+  childNodes:
+    'content':
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': true
+          'DWFB.Demo:MultiColumn': false
 
 
 Neos.Neos:ContentCollection:

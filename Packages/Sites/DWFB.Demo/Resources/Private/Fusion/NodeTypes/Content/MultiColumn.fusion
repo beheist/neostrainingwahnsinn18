@@ -1,0 +1,11 @@
+prototype(DWFB.Demo:MultiColumn) {
+    items = Neos.Neos:ContentCollection {
+        nodePath = 'items'
+    }
+}
+
+prototype(DWFB.Demo:MultiColumnItem) {
+    content = Neos.Neos:ContentCollection {
+        nodePath = 'content'
+    }
+}
