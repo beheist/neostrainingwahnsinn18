@@ -1,0 +1,3 @@
+prototype(DWFB.Demo:Page) < prototype(DWFB.Demo:DefaultPage)
+
+
