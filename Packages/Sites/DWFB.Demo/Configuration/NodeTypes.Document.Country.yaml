@@ -7,3 +7,9 @@
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
+    abstract:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Neos.NodeTypes:Text': true

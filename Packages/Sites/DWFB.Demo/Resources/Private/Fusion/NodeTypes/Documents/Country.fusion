@@ -1,1 +1,9 @@
-prototype(DWFB.Demo:Country) < prototype(DWFB.Demo:DefaultPage)
+prototype(DWFB.Demo:Country) < prototype(DWFB.Demo:DefaultPage) {
+    body {
+        content {
+            abstract = Neos.Neos:ContentCollection {
+                nodePath = 'abstract'
+            }
+        }
+    }
+}
